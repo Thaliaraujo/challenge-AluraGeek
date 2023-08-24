@@ -28,23 +28,6 @@ async function createProduct(name, imageUrl, price, category, description) {
     return response;
 };
 
-//PUT
-async function editProduct(id, updatedProduct) {
-    try{
-        const connection = await fetch(`https://64da8814e947d30a260b5e1a.mockapi.io/geek/${id}`, {
-            method: "PUT",
-            headers: {
-                "Content-type": "application/json"
-            },
-            body: JSON.stringify(updatedProduct)
-        });
-        const response = await connection.json();
-        return response;
-    }catch(erro) {
-        return console.log(erro);
-    };
-};
-
 //DELETE
 async function deleteProduct(id) {
     try{
@@ -61,7 +44,6 @@ async function deleteProduct(id) {
 export const productService = {
     listProducts,
     createProduct,
-    editProduct,
     deleteProduct
 };
 

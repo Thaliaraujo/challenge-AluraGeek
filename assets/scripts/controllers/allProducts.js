@@ -11,7 +11,7 @@ function createProduct(name, imageUrl, alt, price, id) {
             </div>
             <p class="products__product__text">${name}</p>
             <h3 class="products__product__price">${price}</h3>
-            <a class="products__product__link" href="./pages/productDetails.html?id=${id}">Ver produto</a>
+            <a class="products__product__link" href="#">Ver produto</a>
         </div>
     `
 
