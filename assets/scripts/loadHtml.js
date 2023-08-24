@@ -10,7 +10,7 @@ function hideButtonOnIndexPage() {
   let currentPage = window.location.pathname; // Obtém o caminho da página atual
 
   // Verifica se a página é a página index.html
-  if (currentPage === "index.html") {
+  if (currentPage === "/challenge-AluraGeek/index.html") {
      const adminLink = document.getElementById("adminLink");
      if (adminLink) {
        adminLink.style.display = "none";
