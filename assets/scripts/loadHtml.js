@@ -10,12 +10,12 @@ function hideButtonOnIndexPage() {
   let currentPage = window.location.pathname; // Obtém o caminho da página atual
 
   // Verifica se a página é a página index.html
-  if (currentPage === "https://thaliaraujo.github.io/challenge-AluraGeek/index.html") {
+  if (currentPage === "index.html") {
      const adminLink = document.getElementById("adminLink");
      if (adminLink) {
        adminLink.style.display = "none";
     };
-  } else if (currentPage === "https://thaliaraujo.github.io/challenge-AluraGeek/pages/addProduct.html") {
+  } else if (currentPage === "pages/addProduct.html") {
     const loginLink = document.getElementById("loginLink");
     if (loginLink) {
       loginLink.style.display = "none";
