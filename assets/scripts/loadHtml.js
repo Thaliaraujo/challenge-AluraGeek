@@ -35,7 +35,7 @@ function hideButtonOnIndexPage() {
 // Carrega o conteúdo do arquivo header.html e footer.html e insere nas seções header e footer
 async function loadHeader() {
   const headerContainer = document.getElementById("header");
-  const headerHtml = await loadHtml("challenge-AluraGeek/pages/header.html");
+  const headerHtml = await loadHtml("../pages/header.html");
   headerContainer.innerHTML = headerHtml;
   hideButtonOnIndexPage();
 };
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 async function loadFooter() {
   const footerContainer = document.getElementById("footer");
-  const footerHtml = await loadHtml("challenge-AluraGeek/pages/header.html");
+  const footerHtml = await loadHtml("../pages/footer.html");
   footerContainer.innerHTML = footerHtml;
 };
 
