@@ -1,0 +1,33 @@
+.popup{
+    background-color: var(--orange);
+    border-radius: 5px;
+    opacity: .9;
+    padding: .5rem .20rem .5rem;
+    position: absolute;
+    text-align: center;
+    transform: translate(5%, 50%);
+    width: 140px;
+    z-index: 1;
+}
+
+.popup p,
+.popup button{
+    color: var(--white);
+    font-family: var(--raleway) 700;
+    font-size: .9rem;
+}
+
+.popup p{
+    margin-bottom: 5px;
+    line-height: 120%;
+}
+
+.popup button{
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    padding: .15rem;
+}
+
+.popup button:hover {
+    border: 1px solid var(--white);
+}

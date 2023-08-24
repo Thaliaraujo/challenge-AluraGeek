@@ -1,0 +1,123 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    height: 4.5rem;
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+.header__logo {
+    width: 6.25rem;
+}
+
+.header__link{
+    text-decoration: none;
+}
+  
+.header__login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    padding: 0.75rem 1rem;
+    gap: 0.625rem;
+    
+    border-radius: 5px;
+    background: var(--background-button);
+    background-origin: border-box;
+    box-shadow: inset 0 1000px var(--white);
+    border: 1px solid transparent;
+    
+    color: var(--orange);
+    font-family: var(--raleway);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.header__login:hover{
+    background: var(--orange);
+    background: var(--background-button);
+    box-shadow: none;
+    color: var(--white);
+}
+
+.header__image{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.header__search{
+    display: none;
+} 
+
+@media screen and (min-width: 768px) {
+    .header{
+    padding: 1rem 2rem;
+    }
+
+    .header__container{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .header__logo {
+        width: 9rem;
+    }
+
+    .header__search{
+        display: flex;
+        align-items: center;
+        width: 17rem;
+        padding: 0.5rem 1rem;
+
+        font-family: var(--raleway);
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1rem;
+        text-align: center;
+
+        background-color: var(--whitesmoke);
+        color: var(--black);
+        border: 1px solid transparent;
+        border-radius: 1.25rem;
+
+        background-image: url("../image/search.svg");
+        background-repeat: no-repeat;
+        background-position: 13rem;
+        background-size: 1.2rem;
+    }
+
+    .header__login{
+        width: 10.375rem;
+        font-size: 1rem;
+    }
+
+    .header__image{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .header{ 
+        justify-content: space-around;
+        width: 100vw;
+        padding: 2rem 0rem;
+    }
+
+    .header__login{
+        width: 12rem;
+    }
+
+    .header__search{
+        width: 25rem;
+        gap: 0.5rem;
+        background-position: 18rem;
+    }
+
+    .header__login{
+        width: 11.5rem;
+    }
+}

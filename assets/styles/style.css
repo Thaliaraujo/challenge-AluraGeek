@@ -1,0 +1,35 @@
+@import url(../styles/header.css);
+@import url(../styles/banner.css);
+@import url(../styles/button.css);
+@import url(../styles/products.css);
+@import url(../styles/footer.css);
+@import url(../styles/login.css);
+@import url(../styles/addProduct.css);
+@import url(../styles/productDetails.css);
+@import url(../styles/category.css);
+@import url(../styles/adminMenu.css);
+@import url(../styles/popupDelete.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --whitesmoke: #F5F5F5;  
+    --orange: rgba(251,75,2,1);
+    --red: #ff0000;
+    --light-grey:#C8C8C8;
+    --grey: #A2A2A2;
+    --background-button: linear-gradient(90deg, #E69D47 0%, #F81D2A 100%);
+    --gradient-banner: linear-gradient(to bottom, rgba(0,0,0,100), rgba(255,255,255,0), rgba(0,0,0,100));
+    --font-raleway: "raleway"; 
+    --background-footer: #EAF2FD;
+}
+
+html{
+    background-color: var(--whitesmoke);
+    color: var(--black);
+    font-family: var(--font-raleway);
+    font-size: 1rem;
+    font-weight: 600; 
+}

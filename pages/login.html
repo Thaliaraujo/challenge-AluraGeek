@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/styles/reset.css">
+        <link rel="stylesheet" href="../assets/styles/style.css">
+        <link rel="shortcut icon" href="../assets/image/favicon.svg" type="image/x-icon">
+        
+        <title>Login - Alura Geek</title>
+    </head>
+    <body>
+        <header id="header"></header>
+        <main>
+            <section class="login__content">
+                <h2 class="login__content__title">Iniciar Sessão</h2>
+                <form class="login__content__form" id="loginForm" onsubmit="return formValidation()">
+                    <div>
+                        <label for="email"></label>
+                        <input class="login__content__form__item" type="email" id="email" data-input="login-email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div>
+                        <label for="password"></label>
+                        <input class="login__content__form__item" type="password" id="password" value="admin" data-input="login-password" placeholder="Sua senha" required>
+                    </div>
+                    <div class="login__content__form__logar">
+                        <button class="login__content__form__button btn" type="submit" id="logar"><span>Logar</span></button> 
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer id="footer"></footer>
+        <script src="../assets/scripts/main.js" type="module"></script>
+        <script src="../assets/scripts/formValidation/loginFormValidation.js"></script>
+    </body>
+</html>

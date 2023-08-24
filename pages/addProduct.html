@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../assets/styles/reset.css">
+        <link rel="stylesheet" href="../assets/styles/style.css">
+        <link rel="shortcut icon" href="../assets/image/favicon.svg" type="image/x-icon">
+
+        <title>Adicionar Produto</title>
+    </head>
+    <body>
+        <header id="header"></header> 
+        <main>
+            <section  class="add-product" id="add-product">
+                <div class="container__form">
+                    <form class="form__add__product" data-form-add-product>
+                        <h3 class="form__add__product--titulo">Adicionar novo produto</h3>
+                        <div class="form__box">
+                            <input id="image" class="form__input" type="url" data-url  placeholder="URL da imagem  https://s3-alpha.com/img/1e72/"/>
+                            <span class="message__error" data-error="imageUrl"></span>
+                        </div>
+                        <div class="form__box">
+                            <input id="category" class="form__input" type="text" data-category placeholder="Categoria"/>
+                            <span class="message__error" data-error="category"></span>
+                        </div>
+                        <div class="form__box">
+                            <input id="name" class="form__input" type="text" data-name placeholder="Nome do produto"/>
+                            <span class="message__error" data-error="name"></span>
+                        </div>
+                        <div class="form__box">
+                            <input id="price" class="form__input" type="number" step="0.01" data-price  placeholder="Preço do produto"/>
+                            <span class="message__error" data-error="price"></span>
+                        </div>
+                        <div class="form__box">
+                            <textarea id="description" class="form__input" type="text" data-description maxlength="150" placeholder="Descrição do produto"></textarea>
+                            <span class="message__error" data-error="description"></span>
+                        </div>
+                        <div class="form__box">
+                            <button class="button__add btn" type="submit"><span>Adicionar Produto</span></button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer id="footer"></footer>
+        <script src="../assets/scripts/main.js" type="module"></script>
+        <script src="../assets/scripts/controllers/addProduct.js" type="module"></script>
+    </body>
+</html>

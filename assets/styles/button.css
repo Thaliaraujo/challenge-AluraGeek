@@ -1,0 +1,83 @@
+.btn {
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: transparent;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+ .btn {
+    background: var(--background-button);
+}
+  
+.btn:before,
+.btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: var(--background-button);
+    transition: all 0.3s ease;
+}
+
+.btn:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn:hover {
+    color: var(--orange);
+    background: transparent;
+}
+
+.btn:hover:before {
+    height: 100%;
+}
+
+.btn:hover:after {
+    width: 100%;
+}
+
+.btn span:before,
+.btn span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: var(--orange);
+    transition: all 0.3s ease; 
+}
+
+.btn span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn span:after {
+    height: 2px;
+    width: 0%;
+}
+
+.btn span:hover:before {
+    height: 100%;
+}
+
+.btn span:hover:after {
+    width: 100%;
+} 
+
+@media screen and (min-width: 768px) {
+    .btn{
+        padding: 1rem;
+    }
+}

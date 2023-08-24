@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./assets/styles/reset.css">
+        <link rel="stylesheet" href="./assets/styles/style.css">
+        <link rel="shortcut icon" href="./assets/image/favicon.svg" type="image/x-icon">
+        <title>Home - Alura Geek</title>
+    </head>
+    <body>
+        <header id="header"></header> 
+        <main>
+            <section class="banner">
+                <h1 class="banner__title">Julho Promocional</h1>
+                <p class="banner__text">Produtos selecionados com 33% de desconto</p>
+                <a class="banner__link btn" href="#consoles"><span>Ver Consoles</span></a>
+            </section>
+            
+            <section class="category" id="category" data-category>
+                <section class="category__products" id="starwars" data-category="starwars">
+                    <div class="container__category">
+                        <h2 class="container__category__title">Star Wars</h2>
+                        <a class="container__category__link" href="./pages/adminMenu.html" id="allStarwars" data-link>Ver tudo</a>
+                    </div>
+                    <div class="card"></div>
+                </section>
+
+                <section class="category__products" id="consoles" data-category="consoles">
+                    <div class="container__category">
+                        <h2 class="container__category__title">Consoles</h2>
+                        <a class="container__category__link" href="./pages/adminMenu.html" id="allConsoles" data-link>Ver tudo</a>
+                    </div>
+                    <div class="card"></div>
+                </section>
+                
+                <section class="category__products" id="diversos" data-category="diversos">
+                    <div class="container__category">
+                        <h2 class="container__category__title">Diversos</h2>
+                        <a class="container__category__link" href="./pages/adminMenu.html" id="alldiversos" data-link>Ver tudo</a>
+                    </div>
+                    <div class="card"></div>
+                </section>
+            </section>
+        </main>
+        <footer id="footer"></footer>
+        <script src="./assets/scripts/main.js" type="module"></script>
+        <script src="./assets/scripts/controllers/productCategory.js" type="module"></script>
+    </body>
+</html>
