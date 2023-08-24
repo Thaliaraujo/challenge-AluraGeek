@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
@@ -19,22 +19,27 @@
                     <form class="form__add__product" data-form-edit-product>
                         <h3 class="form__add__product--titulo">Editar produto</h3>
                         <div class="form__box">
-                            <input id="image" class="form__input" type="url" data-url  placeholder="URL da imagem  https://s3-alpha.com/img/1e72/"/>
+                            <label for="image">URL da imagem</label>
+                            <input id="image" class="form__input" type="url" data-image  placeholder="URL da imagem  https://s3-alpha.com/img/1e72/"/>
                             <span class="message__error" data-error="imageUrl"></span>
                         </div>
                         <div class="form__box">
+                            <label for="category">Categoria</label>
                             <input id="category" class="form__input" type="text" data-category placeholder="Categoria"/>
                             <span class="message__error" data-error="category"></span>
                         </div>
                         <div class="form__box">
+                            <label for="name">Nome do produto</label>
                             <input id="name" class="form__input" type="text" data-name placeholder="Nome do produto"/>
                             <span class="message__error" data-error="name"></span>
                         </div>
                         <div class="form__box">
+                            <label for="price">Preço do produto</label>
                             <input id="price" class="form__input" type="number" step="0.01" data-price  placeholder="Preço do produto"/>
                             <span class="message__error" data-error="price"></span>
                         </div>
                         <div class="form__box">
+                            <label for="description">Descrição do produto</label>
                             <textarea id="description" class="form__input" type="text" data-description maxlength="150" placeholder="Descrição do produto"></textarea>
                             <span class="message__error" data-error="description"></span>
                         </div>
@@ -48,6 +53,6 @@
 
         <footer id="footer"></footer>
         <script src="../assets/scripts/main.js" type="module"></script>
-        <script src="../assets/scripts/controllers/editProduct.js" type="module"></script>
+        <!-- <script src="../assets/scripts/controllers/editProduct.js" type="module"></script> -->
     </body>
-</html> -->
+</html>

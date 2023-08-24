@@ -23,6 +23,6 @@ formAddProduct.addEventListener("submit", async evento => {
     const validatedForm = validationForm();
     if (validatedForm) {
         await addProduct();
-        window.location.href = "../pages/adminMenu.html";
+        window.location.href = "pages/adminMenu.html";
     }
 });
